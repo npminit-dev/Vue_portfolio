@@ -21,6 +21,11 @@ const { title } = defineProps<{ title: string }>()
   justify-content: center;
   margin-right: 10px;
 
+  @media screen and (width < 578px) {
+    width: 100%;
+    cursor: pointer;
+  }
+
   .linkbox_blur {
     height: 100%;
     min-width: 40px;
@@ -28,6 +33,10 @@ const { title } = defineProps<{ title: string }>()
     transition-duration: 300ms;
     border-radius: 100%;
     position: absolute;
+
+    @media screen and (width < 578px) {
+      border-radius: 0;
+    }
   }
 
   .linkbox_link {
@@ -35,6 +44,10 @@ const { title } = defineProps<{ title: string }>()
     font-weight: 700;
     z-index: 100;
     transition-duration: 200ms;
+
+    @media screen and (width < 578px) {
+      margin-right: auto;
+    }
   }
 
   &:hover>.linkbox_blur {

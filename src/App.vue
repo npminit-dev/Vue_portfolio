@@ -13,6 +13,6 @@
 
 <style>
   #app {
-    height: 1000px;
+    height: 2000px;
   }
 </style>

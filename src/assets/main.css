@@ -355,6 +355,7 @@ template {
 :root {
   --paragraphs: 'OpenSans', sans-serif;
   --titles: 'Nunito', sans-serif;
+  --mono: 'JetBrains Mono', sans-serif;
   --background: #1A1A1A;
   --text: #EAEAEA;
   --highlight: #5BC0BE;
@@ -369,7 +370,6 @@ a {
 body {
   background-color: var(--background);
   font-size: 16px;
-  min-height: 200vh;
 }
 
 h1, h2, h3, h4, h5, h6, span, a {
