@@ -378,6 +378,7 @@ h1, h2, h3, h4, h5, h6, span, a {
 
 p {
   font-family: var(--paragraphs);
+  margin: 0;
 }
 
 * {
@@ -393,6 +394,15 @@ p {
   to {
     transform: translateY(0);
     filter: opacity(1);
+  }
+}
+
+@keyframes breathe {
+  from {
+    transform: scale(1)
+  }
+  to {
+    transform: scale(2)
   }
 }
 

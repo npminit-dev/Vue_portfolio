@@ -30,7 +30,7 @@ watchEffect(() => {
 
 <template>
   <div id="boxpar">
-    <span :key="paragraph" ref="typing" id="paragraph"></span>
+    <p :key="paragraph" ref="typing" id="paragraph"></p>
   </div>
 </template>
 
@@ -42,13 +42,14 @@ watchEffect(() => {
     margin-top: 20px;
     text-align: left;
 
-    @media screen and (width < 578px) {
+    @media screen and (width < 768px) {
       text-align: center;
       padding: 0 10px
     }
   }
 
   #paragraph {
+    display: inline;
     font-family: var(--paragraphs);
     font-size: 18px;
     

@@ -27,7 +27,6 @@ import Snakes from './Snakes.vue';
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid white;
   overflow-x: clip;
 
   @media screen and (width < 768px) {
@@ -99,15 +98,4 @@ import Snakes from './Snakes.vue';
   }
 
 }
-
-@keyframes breathe {
-  from {
-    transform: scale(1)
-  }
-  to {
-    transform: scale(2)
-  }
-}
-
-
 </style>
