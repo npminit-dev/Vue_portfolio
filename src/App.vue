@@ -26,10 +26,12 @@
   <AsyncWrapper>
     <AsyncProjects/>
   </AsyncWrapper>
+
+  <Divider title="CONTACT"/>
+
+  
 </template>
 
 <style>
-  #app {
-    height: 2000px;
-  }
+
 </style>

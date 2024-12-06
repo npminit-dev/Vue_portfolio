@@ -28,6 +28,7 @@ const { stop } = useIntersectionObserver(
 
 <style scoped>
 #boxdiv {
+  position: relative;
   width: 100%;
   height: fit-content;
   display: grid;

@@ -15,15 +15,19 @@
 </script>
 
 <template>
-  <div class="box" ref="target">
+  <div class="box" :class="{ visible: targetIsVisible }" ref="target">
     <slot v-if="targetIsVisible"></slot>
   </div>
 </template>
 
 <style scoped>
-  #box {
+  .box {
     position: relative;
-    height: 100px;
+    height: 200px;
     width: 100%;
+  }
+
+  .visible {
+    height: fit-content;
   }
 </style>

@@ -1,3 +1,5 @@
+import type { Project, ProjectIcon } from "./typedefs/projects";
+
 export const colors = {
   BACKGROUND: '#1A1A1A',
   TEXT: '#EAEAEA',
@@ -163,4 +165,338 @@ export const TECHS: TechType[] = [
     background: "#4A2318"
   }
 ];
+
+const ico = {
+  Zustand: {
+    name: 'ai-zotero',
+    background: '#2D2622'
+  },
+  TanStack: {
+    name: 'si-reactquery',
+    background: '#2F2844'
+  },
+  RNExpo: {
+    name: 'co-expo',
+    background: '#00344E'
+  },
+  React: {
+    name: 'co-react',
+    background: '#00344E'
+  },
+  NodeJS: {
+    name: 'io-logo-nodejs',
+    background: '#1E3A1E'
+  },
+  JS: {
+    name: 'co-javascript',
+    background: '#3A3A1A'
+  },
+  CSS: {
+    name: 'co-css3-shiled',
+    background: '#0E2C48'
+  },
+  Vue: {
+    name: 'ri-vuejs-line',
+    background: '#104030'
+  },
+  TS: {
+    name: 'co-typescript',
+    background: '#1A3555'
+  },
+  Tailwind: {
+    name: 'si-tailwindcss',
+    background: '#176683'
+  },
+  ReactRouter: {
+    name: 'si-reactrouter',
+    background: '#7F1F2A'
+  },
+  BootStrap: {
+    name: 'bi-bootstrap-fill',
+    background: '#4F0BC0'
+  },
+  AntDesign: {
+    name: 'si-antdesign',
+    background: '#0A4F9E'
+  },
+  MySQL: {
+    name: 'co-mysql',
+    background: '#013A56'
+  },
+  SQLite: {
+    name: 'si-sqlite',
+    background: '#042B40'
+  },
+  SQLServer: {
+    name: 'si-microsoftsqlserver',
+    background: '#9C1C20'
+  },
+  Express: {
+    name: 'si-express',
+    background: '#1F1F1F'
+  },
+  Jest: {
+    name: 'gi-jester-hat',
+    background: '#602D3F'
+  },
+  Cypress: {
+    name: 'si-cypress',
+    background: '#1F262D'
+  },
+  Redux: {
+    name: 'co-redux',
+    background: '#3E2A74'
+  },
+  SemanticUI: {
+    name: 'si-semanticuireact',
+    background: '#0E3C44'
+  },
+  Docker: {
+    name: 'co-docker',
+    background: '#102A3E' 
+  },
+  Figma: {
+    name: 'fa-figma',
+    background: '#4A2318'
+  },
+  NextJS: {
+    name: 'co-nextjs',
+    background: '#3A3A3A'
+  },
+  HTML: {
+    name: 'co-html5-shield',
+    background: '#4A201A'
+  },
+  MongoDB: {
+    name: 'co-mongodb',
+    background: '#1A3626'
+  }
+
+}
+
+export const PROJECTS: Project[] = [
+  {
+    name: 'Strava app',
+    cover: {
+      coverUrl: '',
+      charCoverUrl: ''
+    },
+    description: 'Mobile application that implements the authentication flow described in the Strava devs documentation, obtains daily and monthly activities, and user statistics. Store tokens securely with expo-secure-store and refresh them periodically.',
+    icons: [
+      ico.TanStack, ico.CSS, ico.JS, ico.TS, ico.Zustand, ico.React, ico.RNExpo, ico.NodeJS
+    ],
+    links: [
+      {
+        name: 'Strava api docs',
+        url: 'https://developers.strava.com/'
+      },
+      {
+        name: 'Repository',
+        url: 'https://github.com/npminit-dev/strava_app.git'
+      }
+    ]
+  },
+  {
+    name: 'NutriDash (In progress)',
+    cover: {
+      coverUrl: '',
+      charCoverUrl: ''
+    },
+    description: 'Calorie tracking and nutrition information app built with React Native and Expo. It uses SQLite and complex queries to obtain the necessary data, it does not require an internet connection. This application is internationalized with the i18next library',
+    icons: [
+      ico.RNExpo, ico.TanStack, ico.Tailwind, ico.React, ico.RNExpo, ico.CSS, ico.JS, ico.TS, ico.SQLite
+    ],
+    links: [
+      {
+        name: 'Repository',
+        url: 'https://github.com/npminit-dev/NutriDash.git'
+      },
+      {
+        name: 'Sample',
+        url: 'https://postimg.cc/K3K1VG7m'
+      }
+    ]
+  },
+  {
+    name: 'ApoloWeb',
+    cover: {
+      coverUrl: '',
+      charCoverUrl: ''
+    },
+    description: 'Technical test that implements React as a UI library, using optimization techniques such as code splitting and lazy loading. It uses IndexedDB to store logs and consumes the Rick And Morty API using custom hooks. Implements an advanced filter system using regular expressions.',
+    icons: [
+      ico.JS, ico.CSS, ico.HTML, ico.Tailwind, ico.React, ico.NodeJS, ico.ReactRouter
+    ],
+    links: [
+      {
+        name: 'Repository',
+        url: 'https://github.com/npminit-dev/apoloweb.git'
+      },
+      {
+        name: 'Deploy',
+        url: 'https://apolowebtest.netlify.app/home'
+      },
+      {
+        name: 'Rick and Morty api',
+        url: 'https://rickandmortyapi.com/'
+      }
+    ]
+  },
+  {
+    name: 'SavoryHaven',
+    cover: {
+      coverUrl: '',
+      charCoverUrl: ''
+    },
+    description: 'Technical test using React and tailwind for UI design, uses browser local storage to save product and shopping cart data. Use optimization techniques to maximize performance.',
+    icons: [
+      ico.HTML, ico.CSS, ico.JS, ico.TS, ico.Tailwind, ico.React, ico.ReactRouter
+    ],
+    links: [
+      {
+        name: 'Deploy',
+        url: 'https://savoryhaven.pages.dev/home'
+      }
+    ]
+  },
+  {
+    name: 'Bitnovo',
+    cover: {
+      coverUrl: '',
+      charCoverUrl: ''
+    },
+    description: 'Mobile application created with React Native/Expo that allows payments from different FIAT currencies to different bitcoin tokens. Makes extensive use of Expo APIs, such as Linking (to share paid links) and third-party libraries (such as react-native-qrcode-svg)',
+    icons: [
+      ico.React, ico.RNExpo, ico.TS, ico.JS, ico.CSS, ico.Redux
+    ],
+    links: [
+      {
+        name: 'Payment test',
+        url: 'https://test.xrptoolkit.com/connect-wallet'
+      },
+      {
+        name: 'Generate credentials',
+        url: 'https://xrpl.org/resources/dev-tools/xrp-faucets'
+      },
+      {
+        name: 'Repository',
+        url: 'https://github.com/npminit-dev/bitnovo.git'
+      }
+    ]
+  },
+  {
+    name: 'Carnes Pampeanas (in progress)',
+    cover: {
+      coverUrl: '',
+      charCoverUrl: ''
+    },
+    description: 'Emulation of a full stack e-commerce app. For the backend it uses NodeJS and Express, password encryption with the bcrypt library, strong typing, and a modular design pattern. For the frontend it uses React, Router-Dom, Hook-Form and TypeScript. Implements a MySQL database.',
+    icons: [
+      ico.HTML, ico.CSS, ico.JS, ico.React, ico.ReactRouter, ico.NodeJS, ico.Express, ico.TS, ico.MySQL
+    ],
+    links: [
+      {
+        name: 'Repository (Frontend)',
+        url: 'https://github.com/npminit-dev/miAppRepoFront.git'
+      },
+      {
+        name: 'Repository (Backend)',
+        url: 'https://github.com/npminit-dev/CarnesPampeanas.git'
+      }
+    ]
+  },
+  {
+    name: 'VueJS resume',
+    cover: {
+      coverUrl: '',
+      charCoverUrl: ''
+    },
+    description: 'A repository where the various concepts of the VueJS library are explained in a simple but in-depth way. It ranges from template syntax, through advanced concepts of components, reactivity, directives and plugins, ending with built-in components and reusability.',
+    icons: [
+      ico.Vue, ico.HTML, ico.CSS, ico.JS
+    ],
+    links: [
+      {
+        name: 'Repository',
+        url: 'https://github.com/npminit-dev/VueJS-resumen.git'
+      }
+    ]
+  },
+  {
+    name: 'Boost software technical test',
+    cover: {
+      coverUrl: '',
+      charCoverUrl: ''
+    },
+    description: 'A repository where the various concepts of the VueJS library are explained in a simple but in-depth way. It ranges from template syntax, through advanced concepts of components, reactivity, directives and plugins, ending with built-in components and reusability.',
+    icons: [
+      ico.Vue, ico.HTML, ico.CSS, ico.JS
+    ],
+    links: [
+      {
+        name: 'Deploy',
+        url: 'https://sec-sys-tecnical-test.vercel.app/'
+      },
+      {
+        name: 'Repo',
+        url: 'https://github.com/npminit-dev/boostss_prueba_tecnica.git'
+      }
+    ]
+  },
+  {
+    name: 'ByteBlog',
+    cover: {
+      coverUrl: '',
+      charCoverUrl: ''
+    },
+    description: 'Fullstack application for managing blogs related to computing and technology. The stack is: React-ExpressJS-MongoDB. Implement e2e tests with Cypress',
+    icons: [
+      ico.HTML, ico.CSS, ico.JS, ico.SemanticUI, ico.React, ico.ReactRouter, ico.NodeJS, ico.Express, ico.MongoDB, ico.Cypress
+    ],
+    links: [
+      {
+        name: 'Repository',
+        url: 'https://github.com/npminit-dev/ByteBlog.git'
+      }
+    ]
+  },
+  {
+    name: 'NASA Apod',
+    cover: {
+      coverUrl: '',
+      charCoverUrl: ''
+    },
+    description: "'Bare' React Native application that makes use of the Astronomical Photo of the Day (APOD) API belonging to NASA.",
+    icons: [
+      ico.React, ico.TS, ico.Jest
+    ],
+    links: [
+      {
+        name: 'Repository',
+        url: 'https://github.com/npminit-dev/NASA-App.git'
+      },
+      {
+        name: 'APOD api website',
+        url: 'https://data.nasa.gov/Space-Science/Astronomy-Picture-of-the-Day-API/ez2w-t8ua/about_data'
+      }
+    ]
+  },
+  {
+    name: 'DailyFuel',
+    cover: {
+      coverUrl: '',
+      charCoverUrl: ''
+    },
+    description: "Simple daily meal log recording, deleting and modifying app using Expo and React Native.",
+    icons: [
+      ico.React, ico.RNExpo
+    ],
+    links: [
+      {
+        name: 'Repository',
+        url: 'https://github.com/npminit-dev/DailyFuel.git'
+      }
+    ]
+  }
+]
 
