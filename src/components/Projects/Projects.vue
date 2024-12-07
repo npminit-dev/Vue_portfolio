@@ -4,6 +4,7 @@
   import { PROJECTS } from '../../Constants'
   import { onMounted, useTemplateRef } from 'vue';
   import type { SwiperContainer } from 'swiper/element';
+  import SwipeBtns from './SwipeBtns.vue';
 
   const swiperContainer = useTemplateRef<SwiperContainer>('projects')
 
@@ -14,7 +15,7 @@
         delay: 7000
       },
       grabCursor: true,
-      speed: 750,
+      speed: 500,
       threshold: 75,
       keyboard: {
         enabled: true,
@@ -39,16 +40,8 @@
 
 <template>
   <section id="projects">
-    <nav id="projects_nav">
-      <div id="projects_nav_inner">
-        <div id="prev" class="projects_nav_box">
-          <v-icon class="projects_nav_box_icon" name="bi-chevron-compact-left"></v-icon>
-        </div>
-        <div id="next" class="projects_nav_box">
-          <v-icon class="projects_nav_box_icon" name="bi-chevron-compact-right"></v-icon>
-        </div>
-      </div>
-    </nav>
+    <h1 id="projects_title" class="appear">~ Swipe to explore ~</h1>
+    <SwipeBtns/>
     <swiper-container id="projects_swiper" :init="false" ref="projects" style="height: 100%;">
       <Project :="project" v-for="project in PROJECTS"/>
     </swiper-container>
@@ -64,6 +57,34 @@
     min-height: calc(100vh - 39px);
     overflow-x: clip;
 
+    @media screen and (width < 768px) {
+      min-height: unset;
+      height: fit-content;
+    }
+
+    #projects_title {
+      position: absolute;
+      display: none;
+      width: fit-content;
+      top: 50px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 18px;
+      filter: opacity(0);
+
+      @media screen and (width < 768px) {
+        display: block;
+        top: unset;
+        bottom: -25px;
+      }
+    }
+
+    .appear {
+      animation: fadein_down 1s ease-out forwards;
+    }
+
     #projects_swiper {
       position: relative;
       margin: 0 50px;
@@ -71,43 +92,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-    }
 
-    #projects_nav {
-      position: absolute;
-      width: 100%;
-      height: min-content;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      top: 0;
-      bottom: 0;
-      margin: auto 0;
-      z-index: 200;
-      pointer-events: none;
-
-      #projects_nav_inner {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        max-width: 800px;
-
-        .projects_nav_box {
-          padding: 0 10px;
-          cursor: pointer;
-          pointer-events: all;
-          transition-duration: 200ms;
-          &:hover {
-            transform: scale(1.1);
-          }
-  
-          .projects_nav_box_icon {
-            height: 60px;
-            width: 60px;
-          }
-        }
+      @media screen and (width < 1025px) {
+        min-height: unset;
+        height: fit-content;
+        margin: 0 10px;
       }
     }
 

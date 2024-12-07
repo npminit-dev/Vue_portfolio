@@ -11,9 +11,14 @@ export type ProjectIcon = {
   background:string
 }
 
-export type ProjectCover = {
+export type Cover = {
   coverUrl:string
   charCoverUrl:string
+}
+
+export type ProjectCover = {
+  md: Cover,
+  sm: Cover
 }
 
 export type ProjectLink = {

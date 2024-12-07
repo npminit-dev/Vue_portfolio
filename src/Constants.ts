@@ -129,8 +129,8 @@ export const TECHS: TechType[] = [
     description:
       "Experienced in developing cross-platform mobile applications using React Native and Expo for fast development cycles.",
     icon: "co-expo",
-    color: "#61DAFB",
-    background: "#00344E"
+    color: "#f5f5f5",
+    background: "#3A3A3A"
   },
   {
     title: "TypeScript",
@@ -177,7 +177,7 @@ const ico = {
   },
   RNExpo: {
     name: 'co-expo',
-    background: '#00344E'
+    background: '#555'
   },
   React: {
     name: 'co-react',
@@ -209,7 +209,7 @@ const ico = {
   },
   ReactRouter: {
     name: 'si-reactrouter',
-    background: '#7F1F2A'
+    background: '#8F2F3A'
   },
   BootStrap: {
     name: 'bi-bootstrap-fill',
@@ -241,7 +241,7 @@ const ico = {
   },
   Cypress: {
     name: 'si-cypress',
-    background: '#1F262D'
+    background: '#2f363D'
   },
   Redux: {
     name: 'co-redux',
@@ -253,14 +253,14 @@ const ico = {
   },
   Docker: {
     name: 'co-docker',
-    background: '#102A3E' 
+    background: '#102A3E'
   },
   Figma: {
     name: 'fa-figma',
     background: '#4A2318'
   },
   NextJS: {
-    name: 'co-nextjs',
+    name: 'co-next-js',
     background: '#3A3A3A'
   },
   HTML: {
@@ -278,8 +278,14 @@ export const PROJECTS: Project[] = [
   {
     name: 'Strava app',
     cover: {
-      coverUrl: '',
-      charCoverUrl: ''
+      md: {
+        coverUrl: '/project-imgs-md/StravaApp.webp',
+        charCoverUrl: '/project-imgs-md/StravaAppChar.webp'
+      },
+      sm: {
+        coverUrl: '/project-imgs-sm/StravaApp.webp',
+        charCoverUrl: '/project-imgs-sm/StravaAppChar.webp',
+      }
     },
     description: 'Mobile application that implements the authentication flow described in the Strava devs documentation, obtains daily and monthly activities, and user statistics. Store tokens securely with expo-secure-store and refresh them periodically.',
     icons: [
@@ -299,8 +305,14 @@ export const PROJECTS: Project[] = [
   {
     name: 'NutriDash (In progress)',
     cover: {
-      coverUrl: '',
-      charCoverUrl: ''
+      md: {
+        coverUrl: '/project-imgs-md/NutriDash.webp',
+        charCoverUrl: '/project-imgs-md/NutriDashChar.webp'
+      },
+      sm: {
+        coverUrl: '/project-imgs-sm/NutriDash.webp',
+        charCoverUrl: '/project-imgs-sm/NutriDashChar.webp',
+      }
     },
     description: 'Calorie tracking and nutrition information app built with React Native and Expo. It uses SQLite and complex queries to obtain the necessary data, it does not require an internet connection. This application is internationalized with the i18next library',
     icons: [
@@ -320,8 +332,14 @@ export const PROJECTS: Project[] = [
   {
     name: 'ApoloWeb',
     cover: {
-      coverUrl: '',
-      charCoverUrl: ''
+      md: {
+        coverUrl: '/project-imgs-md/ApoloWeb.webp',
+        charCoverUrl: '/project-imgs-md/ApoloWebChar.webp'
+      },
+      sm: {
+        coverUrl: '/project-imgs-sm/ApoloWeb.webp',
+        charCoverUrl: '/project-imgs-sm/ApoloWebChar.webp',
+      }
     },
     description: 'Technical test that implements React as a UI library, using optimization techniques such as code splitting and lazy loading. It uses IndexedDB to store logs and consumes the Rick And Morty API using custom hooks. Implements an advanced filter system using regular expressions.',
     icons: [
@@ -345,8 +363,14 @@ export const PROJECTS: Project[] = [
   {
     name: 'SavoryHaven',
     cover: {
-      coverUrl: '',
-      charCoverUrl: ''
+      md: {
+        coverUrl: '/project-imgs-md/SavoryHaven.webp',
+        charCoverUrl: '/project-imgs-md/SavoryHavenChar.webp'
+      },
+      sm: {
+        coverUrl: '/project-imgs-sm/SavoryHaven.webp',
+        charCoverUrl: '/project-imgs-sm/SavoryHavenChar.webp',
+      }
     },
     description: 'Technical test using React and tailwind for UI design, uses browser local storage to save product and shopping cart data. Use optimization techniques to maximize performance.',
     icons: [
@@ -362,8 +386,14 @@ export const PROJECTS: Project[] = [
   {
     name: 'Bitnovo',
     cover: {
-      coverUrl: '',
-      charCoverUrl: ''
+      md: {
+        coverUrl: '/project-imgs-md/Bitnovo.webp',
+        charCoverUrl: '/project-imgs-md/BitnovoChar.webp'
+      },
+      sm: {
+        coverUrl: '/project-imgs-sm/Bitnovo.webp',
+        charCoverUrl: '/project-imgs-sm/BitnovoChar.webp',
+      }
     },
     description: 'Mobile application created with React Native/Expo that allows payments from different FIAT currencies to different bitcoin tokens. Makes extensive use of Expo APIs, such as Linking (to share paid links) and third-party libraries (such as react-native-qrcode-svg)',
     icons: [
@@ -387,8 +417,14 @@ export const PROJECTS: Project[] = [
   {
     name: 'Carnes Pampeanas (in progress)',
     cover: {
-      coverUrl: '',
-      charCoverUrl: ''
+      md: {
+        coverUrl: '/project-imgs-md/CarnesPampeanas.webp',
+        charCoverUrl: '/project-imgs-md/CarnesPampeanasChar.webp'
+      },
+      sm: {
+        coverUrl: '/project-imgs-sm/CarnesPampeanas.webp',
+        charCoverUrl: '/project-imgs-sm/CarnesPampeanasChar.webp',
+      }
     },
     description: 'Emulation of a full stack e-commerce app. For the backend it uses NodeJS and Express, password encryption with the bcrypt library, strong typing, and a modular design pattern. For the frontend it uses React, Router-Dom, Hook-Form and TypeScript. Implements a MySQL database.',
     icons: [
@@ -408,8 +444,14 @@ export const PROJECTS: Project[] = [
   {
     name: 'VueJS resume',
     cover: {
-      coverUrl: '',
-      charCoverUrl: ''
+      md: {
+        coverUrl: '/project-imgs-md/VueJSResume.webp',
+        charCoverUrl: '/project-imgs-md/VueJSResumeChar.webp'
+      },
+      sm: {
+        coverUrl: '/project-imgs-sm/VueJSResume.webp',
+        charCoverUrl: '/project-imgs-sm/VueJSResumeChar.webp',
+      }
     },
     description: 'A repository where the various concepts of the VueJS library are explained in a simple but in-depth way. It ranges from template syntax, through advanced concepts of components, reactivity, directives and plugins, ending with built-in components and reusability.',
     icons: [
@@ -423,14 +465,20 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    name: 'Boost software technical test',
+    name: 'Sec&Sys technical test',
     cover: {
-      coverUrl: '',
-      charCoverUrl: ''
+      md: {
+        coverUrl: '/project-imgs-md/SecAndSys.webp',
+        charCoverUrl: '/project-imgs-md/SecAndSysChar.webp'
+      },
+      sm: {
+        coverUrl: '/project-imgs-sm/SecAndSys.webp',
+        charCoverUrl: '/project-imgs-sm/SecAndSysChar.webp',
+      }
     },
-    description: 'A repository where the various concepts of the VueJS library are explained in a simple but in-depth way. It ranges from template syntax, through advanced concepts of components, reactivity, directives and plugins, ending with built-in components and reusability.',
+    description: 'A project where UX/UI principles are applied, strongly typed code and a pleasant interface and impressive animations. Fully responsive.',
     icons: [
-      ico.Vue, ico.HTML, ico.CSS, ico.JS
+      ico.HTML, ico.CSS, ico.JS, ico.JS, ico.TS, ico.NextJS, ico.Jest
     ],
     links: [
       {
@@ -439,15 +487,21 @@ export const PROJECTS: Project[] = [
       },
       {
         name: 'Repo',
-        url: 'https://github.com/npminit-dev/boostss_prueba_tecnica.git'
+        url: 'https://github.com/npminit-dev/Sec-SysTecnicalTest.git'
       }
     ]
   },
   {
     name: 'ByteBlog',
     cover: {
-      coverUrl: '',
-      charCoverUrl: ''
+      md: {
+        coverUrl: '/project-imgs-md/ByteBlog.webp',
+        charCoverUrl: '/project-imgs-md/ByteBlogChar.webp'
+      },
+      sm: {
+        coverUrl: '/project-imgs-sm/ByteBlog.webp',
+        charCoverUrl: '/project-imgs-sm/ByteBlogChar.webp',
+      }
     },
     description: 'Fullstack application for managing blogs related to computing and technology. The stack is: React-ExpressJS-MongoDB. Implement e2e tests with Cypress',
     icons: [
@@ -463,8 +517,14 @@ export const PROJECTS: Project[] = [
   {
     name: 'NASA Apod',
     cover: {
-      coverUrl: '',
-      charCoverUrl: ''
+      md: {
+        coverUrl: '/project-imgs-md/NasaApod.webp',
+        charCoverUrl: '/project-imgs-md/NasaApodChar.webp'
+      },
+      sm: {
+        coverUrl: '/project-imgs-sm/NasaApod.webp',
+        charCoverUrl: '/project-imgs-sm/NasaApodChar.webp',
+      }
     },
     description: "'Bare' React Native application that makes use of the Astronomical Photo of the Day (APOD) API belonging to NASA.",
     icons: [
@@ -484,8 +544,14 @@ export const PROJECTS: Project[] = [
   {
     name: 'DailyFuel',
     cover: {
-      coverUrl: '',
-      charCoverUrl: ''
+      md: {
+        coverUrl: '/project-imgs-md/DailyFuel.webp',
+        charCoverUrl: '/project-imgs-md/DailyFuelChar.webp'
+      },
+      sm: {
+        coverUrl: '/project-imgs-sm/DailyFuel.webp',
+        charCoverUrl: '/project-imgs-sm/DailyFuelChar.webp',
+      }
     },
     description: "Simple daily meal log recording, deleting and modifying app using Expo and React Native.",
     icons: [

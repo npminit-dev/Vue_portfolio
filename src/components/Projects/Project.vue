@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import type { Project } from '@/typedefs/projects';
-const { name, description, cover, icons, links } = defineProps<Project>()
 import { useIntersectionObserver } from '@vueuse/core'
 import Link from '../Link.vue';
 import Description from './Description.vue';
 import { ref } from 'vue'
+import Icons from './Icons.vue';
+import ProjectImage from './ProjectImage.vue';
 
+const { name, description, cover, icons, links } = defineProps<Project>()
 const target = ref(null)
 const targetIsVisible = ref(false)
 
@@ -21,19 +23,11 @@ const { stop } = useIntersectionObserver(
 <template>
   <swiper-slide class="slide" ref="target">
     <article class="slide_wrap" :class="{ shown: targetIsVisible }" :key="targetIsVisible + '1'">
-      <div class="slide_wrap_media">
-        <img class="slide_wrap_media_char" />
-        <img class="slide_wrap_media_cover" />
-      </div>
+      <ProjectImage :cover/>
       <div class="slide_wrap_data">
         <h1 class="slide_wrap_data_name">{{ name }}</h1>
         <Description :description />
-        <div class="slide_wrap_data_iconbox">
-          <div class="slide_wrap_data_iconbox_box" v-for="icon in icons">
-            <div class="slide_wrap_data_iconbox_box_blur" :style="{ backgroundColor: icon.background }"></div>
-            <v-icon class="slide_wrap_data_iconbox_box_icon" :name="icon.name"></v-icon>
-          </div>
-        </div>
+        <Icons :icons="icons" />
         <div class="slide_wrap_data_linkbox">
           <Link :title="link.name" :href="link.url" v-for="link in links" />
         </div>
@@ -44,86 +38,64 @@ const { stop } = useIntersectionObserver(
 
 <style scoped>
 .slide {
-
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px 0;
+
+  @media screen and (width < 769) {
+    height: fit-content;
+  }
 
   .slide_wrap {
-
-    width: 400px;
+    width: fit-content;
     height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     filter: opacity(0);
 
+    @media screen and (width < 1025px) {
+      flex-direction: column;
+      height: 100%;
+    }
+
     .slide_wrap_data {
+
+      width: 450px;
+
+      @media screen and (width < 480px) {
+        width: 100%;
+        padding: 0 10px;
+      }
 
       .slide_wrap_data_name {
         font-size: 32px;
-        font-weight: 700;
+        font-weight: 600;
         line-height: 100%;
+
+        @media screen and (width < 1025px) {
+          text-align: center;
+          font-size: 26px;
+        }
       }
 
       .slide_wrap_data_linkbox {
         margin: 20px 0;
-      }
-
-      .slide_wrap_data_iconbox {
-        padding: 10px 0;
-
-        .slide_wrap_data_iconbox_box {
-          position: relative;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          pointer-events: all;
-          margin: 10px 5px;
-          margin-bottom: 0;
-          cursor: pointer;
-
-          .slide_wrap_data_iconbox_box_icon {
-            display: inline;
-            z-index: 50;
-            height: 35px;
-            width: 35px;
-          }
-
-          .slide_wrap_data_iconbox_box_blur {
-            position: absolute;
-            height: 150%;
-            width: 150%;
-            display: inline;
-            border-radius: 100%;
-            filter: opacity(0);
-            transition-duration: 200ms;
-          }
-
-          &:hover>.slide_wrap_data_iconbox_box_blur {
-            filter: opacity(1) blur(10px);
-          }
-
+        
+        @media screen and (width < 1025px) {
+          text-align: center;
+          line-height: 5px;
         }
       }
-
-
-    }
-
-    .slide_wrap_media {
-
-      .slide_wrap_media_char {}
-
-      .slide_wrap_media_cover {}
     }
   }
-
 }
 
 .shown {
-  animation: show 1s linear forwards;
+  animation: show .7s linear forwards;
 }
 
 @keyframes show {
