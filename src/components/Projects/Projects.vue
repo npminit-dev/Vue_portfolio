@@ -22,14 +22,18 @@
         onlyInViewport: true,
       },
       loop: true,
-      preventClicks: true,
-      watchSlidesProgress: true,
       slidesPerView: 1,
       navigation: {
         prevEl: document.getElementById('prev'),
         nextEl: document.getElementById('next'),
       },
       observeParents: true,
+      effect: 'cube',
+      cubeEffect: {
+        shadowOffset: 100,
+        shadowScale: .5,
+        slideShadows: false
+      },
     }
     if(swiperContainer.value) {
       Object.assign(swiperContainer.value, settings);
@@ -63,21 +67,17 @@
     }
 
     #projects_title {
-      position: absolute;
+      position: relative;
       display: none;
-      width: fit-content;
-      top: 50px;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
+      width: 100%;
       font-weight: 400;
       font-size: 18px;
       filter: opacity(0);
+      text-align: center;
+      margin-top: 20px;
 
       @media screen and (width < 768px) {
         display: block;
-        top: unset;
-        bottom: -25px;
       }
     }
 
@@ -109,7 +109,8 @@
       background-color: var(--highlight);
       animation: breathe 6s ease-in-out alternate infinite;
       filter: blur(100px);
-      border-radius: 100%
+      border-radius: 100%;
+      z-index: -200;
     }
   }
 </style>

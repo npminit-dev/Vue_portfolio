@@ -2,13 +2,20 @@
 import type { ProjectIcon } from '@/typedefs/projects';
 
 const { icons } = defineProps<{ icons: ProjectIcon[] }>()
+
+const shouldRotated = (icon:string) => {
+  const rotatables = ['si-reactquery', 'co-react']
+  if(rotatables.includes(icon)) return true
+  return false
+} 
+
 </script>
 
 <template>
   <div class="slide_wrap_data_iconbox">
     <div class="slide_wrap_data_iconbox_box" v-for="icon in icons">
       <div class="slide_wrap_data_iconbox_box_blur" :style="{ backgroundColor: icon.background }"></div>
-      <v-icon class="slide_wrap_data_iconbox_box_icon" :name="icon.name"></v-icon>
+      <v-icon class="slide_wrap_data_iconbox_box_icon" :name="icon.name" :class="{ rotate: shouldRotated(icon.name) }"></v-icon>
     </div>
   </div>
 </template>
@@ -45,8 +52,8 @@ const { icons } = defineProps<{ icons: ProjectIcon[] }>()
 
     .slide_wrap_data_iconbox_box_blur {
       position: absolute;
-      height: 150%;
-      width: 150%;
+      height: 120%;
+      width: 120%;
       display: inline;
       border-radius: 100%;
       filter: opacity(0);
@@ -58,5 +65,9 @@ const { icons } = defineProps<{ icons: ProjectIcon[] }>()
     }
 
   }
+}
+
+.rotate {
+  animation: rotate 10s linear infinite
 }
 </style>

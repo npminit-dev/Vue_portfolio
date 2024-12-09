@@ -15,14 +15,13 @@ const { stop } = useIntersectionObserver(
   target,
   ([entry]) => {
     targetIsVisible.value = entry?.isIntersecting || false
-  }, { threshold: .5 }
+  },
 )
-
 </script>
 
 <template>
   <swiper-slide class="slide" ref="target">
-    <article class="slide_wrap" :class="{ shown: targetIsVisible }" :key="targetIsVisible + '1'">
+    <article class="slide_wrap">
       <ProjectImage :cover/>
       <div class="slide_wrap_data">
         <h1 class="slide_wrap_data_name">{{ name }}</h1>
@@ -55,7 +54,6 @@ const { stop } = useIntersectionObserver(
     display: flex;
     align-items: center;
     justify-content: center;
-    filter: opacity(0);
 
     @media screen and (width < 1025px) {
       flex-direction: column;
@@ -87,34 +85,11 @@ const { stop } = useIntersectionObserver(
         
         @media screen and (width < 1025px) {
           text-align: center;
-          line-height: 5px;
+          line-height: 120%;
         }
       }
     }
   }
 }
 
-.shown {
-  animation: show .7s linear forwards;
-}
-
-@keyframes show {
-  from {
-    filter: opacity(0)
-  }
-
-  to {
-    filter: opacity(1)
-  }
-}
-
-@keyframes hide {
-  from {
-    filter: opacity(1)
-  }
-
-  to {
-    filter: opacity(0)
-  }
-}
 </style>

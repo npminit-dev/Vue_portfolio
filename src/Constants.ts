@@ -478,7 +478,7 @@ export const PROJECTS: Project[] = [
     },
     description: 'A project where UX/UI principles are applied, strongly typed code and a pleasant interface and impressive animations. Fully responsive.',
     icons: [
-      ico.HTML, ico.CSS, ico.JS, ico.JS, ico.TS, ico.NextJS, ico.Jest
+      ico.HTML, ico.CSS, ico.JS, ico.TS, ico.NextJS, ico.Jest
     ],
     links: [
       {
