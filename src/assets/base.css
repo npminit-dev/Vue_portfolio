@@ -1,4 +1,5 @@
 @font-face {
+  font-display: fallback;
   font-family: 'OpenSans';
   src: url('./fonts/OpenSans-Light.ttf') format('opentype');
   font-weight: 300;
@@ -6,6 +7,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'OpenSans';
   src: url('./fonts/OpenSans-Regular.ttf') format('opentype');
   font-weight: 400;
@@ -13,6 +15,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'OpenSans';
   src: url('./fonts/OpenSans-Medium.ttf') format('opentype');
   font-weight: 500;
@@ -20,6 +23,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'OpenSans';
   src: url('./fonts/OpenSans-SemiBold.ttf') format('opentype');
   font-weight: 600;
@@ -27,6 +31,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'OpenSans';
   src: url('./fonts/OpenSans-Bold.ttf') format('opentype');
   font-weight: 700;
@@ -34,6 +39,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'OpenSans';
   src: url('./fonts/OpenSans-ExtraBold.ttf') format('opentype');
   font-weight: 800;
@@ -41,6 +47,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'OpenSans';
   src: url('./fonts/OpenSans-LightItalic.ttf') format('opentype');
   font-weight: 300;
@@ -48,6 +55,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'OpenSans';
   src: url('./fonts/OpenSans-Italic.ttf') format('opentype');
   font-weight: 400;
@@ -55,6 +63,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'OpenSans';
   src: url('./fonts/OpenSans-MediumItalic.ttf') format('opentype');
   font-weight: 500;
@@ -62,6 +71,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'OpenSans';
   src: url('./fonts/OpenSans-SemiBoldItalic.ttf') format('opentype');
   font-weight: 600;
@@ -69,6 +79,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'OpenSans';
   src: url('./fonts/OpenSans-BoldItalic.ttf') format('opentype');
   font-weight: 700;
@@ -76,6 +87,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'OpenSans';
   src: url('./fonts/OpenSans-ExtraBoldItalic.ttf') format('opentype');
   font-weight: 800;
@@ -83,6 +95,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-Thin.ttf') format('opentype');
   font-weight: 100;
@@ -90,6 +103,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-ExtraLight.ttf') format('opentype');
   font-weight: 200;
@@ -97,6 +111,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-Light.ttf') format('opentype');
   font-weight: 300;
@@ -104,6 +119,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-Regular.ttf') format('opentype');
   font-weight: 400;
@@ -111,6 +127,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-Medium.ttf') format('opentype');
   font-weight: 500;
@@ -118,6 +135,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-SemiBold.ttf') format('opentype');
   font-weight: 600;
@@ -125,6 +143,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-Bold.ttf') format('opentype');
   font-weight: 700;
@@ -132,6 +151,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-ExtraBold.ttf') format('opentype');
   font-weight: 800;
@@ -139,6 +159,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-Black.ttf') format('opentype');
   font-weight: 900;
@@ -146,6 +167,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-ThinItalic.ttf') format('opentype');
   font-weight: 100;
@@ -153,6 +175,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-ExtraLightItalic.ttf') format('opentype');
   font-weight: 200;
@@ -160,6 +183,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-LightItalic.ttf') format('opentype');
   font-weight: 300;
@@ -167,6 +191,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-Italic.ttf') format('opentype');
   font-weight: 400;
@@ -174,6 +199,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-MediumItalic.ttf') format('opentype');
   font-weight: 500;
@@ -181,6 +207,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-SemiBoldItalic.ttf') format('opentype');
   font-weight: 600;
@@ -188,6 +215,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-BoldItalic.ttf') format('opentype');
   font-weight: 700;
@@ -195,6 +223,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-ExtraBoldItalic.ttf') format('opentype');
   font-weight: 800;
@@ -202,6 +231,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Montserrat';
   src: url('./fonts/Montserrat-BlackItalic.ttf') format('opentype');
   font-weight: 900;
@@ -209,6 +239,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Nunito';
   src: url('./fonts/Nunito-ExtraLight.ttf') format('truetype');
   font-weight: 200;
@@ -216,6 +247,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Nunito';
   src: url('./fonts/Nunito-Light.ttf') format('truetype');
   font-weight: 300;
@@ -223,6 +255,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Nunito';
   src: url('./fonts/Nunito-Regular.ttf') format('truetype');
   font-weight: 400;
@@ -230,6 +263,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Nunito';
   src: url('./fonts/Nunito-Medium.ttf') format('truetype');
   font-weight: 500;
@@ -237,6 +271,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Nunito';
   src: url('./fonts/Nunito-SemiBold.ttf') format('truetype');
   font-weight: 600;
@@ -244,6 +279,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Nunito';
   src: url('./fonts/Nunito-Bold.ttf') format('truetype');
   font-weight: 700;
@@ -251,6 +287,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Nunito';
   src: url('./fonts/Nunito-ExtraBold.ttf') format('truetype');
   font-weight: 800;
@@ -258,6 +295,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Nunito';
   src: url('./fonts/Nunito-Black.ttf') format('truetype');
   font-weight: 900;
@@ -265,6 +303,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Nunito';
   src: url('./fonts/Nunito-ExtraLightItalic.ttf') format('truetype');
   font-weight: 200;
@@ -272,6 +311,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Nunito';
   src: url('./fonts/Nunito-LightItalic.ttf') format('truetype');
   font-weight: 300;
@@ -279,6 +319,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Nunito';
   src: url('./fonts/Nunito-Italic.ttf') format('truetype');
   font-weight: 400;
@@ -286,6 +327,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Nunito';
   src: url('./fonts/Nunito-MediumItalic.ttf') format('truetype');
   font-weight: 500;
@@ -293,6 +335,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Nunito';
   src: url('./fonts/Nunito-SemiBoldItalic.ttf') format('truetype');
   font-weight: 600;
@@ -300,6 +343,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Nunito';
   src: url('./static/Nunito-BoldItalic.ttf') format('truetype');
   font-weight: 700;
@@ -307,6 +351,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Nunito';
   src: url('./static/Nunito-ExtraBoldItalic.ttf') format('truetype');
   font-weight: 800;
@@ -314,6 +359,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'Nunito';
   src: url('./static/Nunito-BlackItalic.ttf') format('truetype');
   font-weight: 900;
@@ -321,6 +367,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'JetBrains Mono';
   src: url('./fonts/JetBrainsMono-Thin.ttf') format('truetype');
   font-weight: 100;
@@ -328,6 +375,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'JetBrains Mono';
   src: url('./fonts/JetBrainsMono-ExtraLight.ttf') format('truetype');
   font-weight: 200;
@@ -335,6 +383,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'JetBrains Mono';
   src: url('./fonts/JetBrainsMono-Light.ttf') format('truetype');
   font-weight: 300;
@@ -342,6 +391,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'JetBrains Mono';
   src: url('./fonts/JetBrainsMono-Regular.ttf') format('truetype');
   font-weight: 400;
@@ -349,6 +399,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'JetBrains Mono';
   src: url('./fonts/JetBrainsMono-Medium.ttf') format('truetype');
   font-weight: 500;
@@ -356,6 +407,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'JetBrains Mono';
   src: url('./fonts/JetBrainsMono-SemiBold.ttf') format('truetype');
   font-weight: 600;
@@ -363,6 +415,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'JetBrains Mono';
   src: url('./fonts/JetBrainsMono-Bold.ttf') format('truetype');
   font-weight: 700;
@@ -370,6 +423,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'JetBrains Mono';
   src: url('./fonts/JetBrainsMono-ExtraBold.ttf') format('truetype');
   font-weight: 800;
@@ -377,6 +431,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'JetBrains Mono';
   src: url('./fonts/JetBrainsMono-ThinItalic.ttf') format('truetype');
   font-weight: 100;
@@ -384,6 +439,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'JetBrains Mono';
   src: url('./fonts/JetBrainsMono-ExtraLightItalic.ttf') format('truetype');
   font-weight: 200;
@@ -391,6 +447,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'JetBrains Mono';
   src: url('./fonts/JetBrainsMono-LightItalic.ttf') format('truetype');
   font-weight: 300;
@@ -398,6 +455,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'JetBrains Mono';
   src: url('./fonts/JetBrainsMono-Italic.ttf') format('truetype');
   font-weight: 400;
@@ -405,6 +463,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'JetBrains Mono';
   src: url('./fonts/JetBrainsMono-MediumItalic.ttf') format('truetype');
   font-weight: 500;
@@ -412,6 +471,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'JetBrains Mono';
   src: url('./fonts/JetBrainsMono-SemiBoldItalic.ttf') format('truetype');
   font-weight: 600;
@@ -419,6 +479,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'JetBrains Mono';
   src: url('./fonts/JetBrainsMono-BoldItalic.ttf') format('truetype');
   font-weight: 700;
@@ -426,6 +487,7 @@
 }
 
 @font-face {
+  font-display: fallback;
   font-family: 'JetBrains Mono';
   src: url('./fonts/JetBrainsMono-ExtraBoldItalic.ttf') format('truetype');
   font-weight: 800;

@@ -1,11 +1,12 @@
 <script setup lang="ts">
 const { title } = defineProps<{ title: string }>()
+const emits = defineEmits(['closeMenu'])
 
 </script>
 
 <template>
   <div class="linkbox">
-    <a class="linkbox_link" :href="`#${title.toLowerCase()}`">{{ title }}</a>
+    <a class="linkbox_link" @click="emits('closeMenu')" :href="`#${title.toLowerCase()}`">{{ title }}</a>
     <div class="linkbox_blur"></div>
   </div>
 </template>

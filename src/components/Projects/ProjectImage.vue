@@ -8,11 +8,11 @@ import type { ProjectCover } from '@/typedefs/projects';
   <div class="slide_wrap_media">
     <picture class="slide_wrap_media_char">
       <source style="position: absolute;" :srcset="cover.sm.charCoverUrl" media="(max-width: 769px)" type="image/webp"/>
-      <img loading="lazy" :src="cover.md.charCoverUrl"/>
+      <img loading="lazy" :src="cover.md.charCoverUrl" :alt="cover.alt"/>
     </picture>
     <picture class="slide_wrap_media_cover">
       <source style="position: absolute;" :srcset="cover.sm.coverUrl" media="(max-width: 769px)" type="image/webp"/>
-      <img loading="lazy" :src="cover.md.coverUrl"/>
+      <img loading="lazy" :src="cover.md.coverUrl" :alt="cover.alt"/>
     </picture>
   </div>
 </template>

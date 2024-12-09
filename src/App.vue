@@ -15,25 +15,20 @@
 
 <template>
   <Navigation/>
+  
   <Me/>
 
   <Divider title="STACK"/>
 
-  <AsyncWrapper>
-    <AsyncStack/>
-  </AsyncWrapper>
+  <AsyncStack/>
 
   <Divider title="PROJECTS"/>
 
-  <AsyncWrapper>
-    <AsyncProjects/>
-  </AsyncWrapper>
+  <AsyncProjects/>
 
   <Divider title="CONTACT"/>
 
-  <AsyncWrapper>
-    <Contact/>
-  </AsyncWrapper>
+  <Contact/>
 
   <Footer/>
 </template>

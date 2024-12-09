@@ -2,15 +2,14 @@
 import SectionLink from './SectionLink.vue';
 
   const { links } = defineProps<{ links: string[], burguerOpen:boolean }>()
+  const emits = defineEmits(['closeMenu'])
+
 </script>
 
 <template>
   <nav id="burgmenu" :class="burguerOpen ? 'openMenu' : 'closeMenu'" :key="burguerOpen + ''">
     <div class="burgmenu_itembox" v-for="link in links">
-      <SectionLink :title="link"/>
-    </div>
-    <div class="burgmenu_itembox">
-      <div id="box_separator"></div>
+      <SectionLink :title="link" @close-menu="emits('closeMenu')"/>
     </div>
   </nav>
 </template>
@@ -24,6 +23,7 @@ import SectionLink from './SectionLink.vue';
     flex-direction: column;
     align-items: start;
     justify-content: center;
+    background-color: var(--background);
 
     @media screen and (width < 578px) {
       display: flex;

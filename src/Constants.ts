@@ -15,7 +15,7 @@ export const PHRASES = [
   },
   {
     title: "FRONTEND EXPERT",
-    subtitle: "Crafting responsive, interactive, and user-focused web applications with React and Next.js.",
+    subtitle: "Crafting responsive, interactive, and user-focused web applications with Vue, React and Next.js.",
   },
   {
     title: "MOBILE ENTHUSIAST",
@@ -278,6 +278,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'Strava app',
     cover: {
+      alt: `Strava app project images`,
       md: {
         coverUrl: '/project-imgs-md/StravaApp.webp',
         charCoverUrl: '/project-imgs-md/StravaAppChar.webp'
@@ -305,6 +306,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'NutriDash (In progress)',
     cover: {
+      alt: `NutriDash project images`,
       md: {
         coverUrl: '/project-imgs-md/NutriDash.webp',
         charCoverUrl: '/project-imgs-md/NutriDashChar.webp'
@@ -332,6 +334,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'ApoloWeb',
     cover: {
+      alt: `ApoloWeb project images`,
       md: {
         coverUrl: '/project-imgs-md/ApoloWeb.webp',
         charCoverUrl: '/project-imgs-md/ApoloWebChar.webp'
@@ -363,6 +366,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'SavoryHaven',
     cover: {
+      alt: `SavoryHaven project images`,
       md: {
         coverUrl: '/project-imgs-md/SavoryHaven.webp',
         charCoverUrl: '/project-imgs-md/SavoryHavenChar.webp'
@@ -386,6 +390,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'Bitnovo',
     cover: {
+      alt: `Bitnovo project images`,
       md: {
         coverUrl: '/project-imgs-md/Bitnovo.webp',
         charCoverUrl: '/project-imgs-md/BitnovoChar.webp'
@@ -417,6 +422,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'Carnes Pampeanas (in progress)',
     cover: {
+      alt: `Carnes Pampeanas project images`,
       md: {
         coverUrl: '/project-imgs-md/CarnesPampeanas.webp',
         charCoverUrl: '/project-imgs-md/CarnesPampeanasChar.webp'
@@ -444,6 +450,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'VueJS resume',
     cover: {
+      alt: `VueJS resume project images`,
       md: {
         coverUrl: '/project-imgs-md/VueJSResume.webp',
         charCoverUrl: '/project-imgs-md/VueJSResumeChar.webp'
@@ -467,6 +474,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'Sec&Sys technical test',
     cover: {
+      alt: `Sec&Sys technical test project images`,
       md: {
         coverUrl: '/project-imgs-md/SecAndSys.webp',
         charCoverUrl: '/project-imgs-md/SecAndSysChar.webp'
@@ -494,6 +502,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'ByteBlog',
     cover: {
+      alt: `ByteBlog project images`,
       md: {
         coverUrl: '/project-imgs-md/ByteBlog.webp',
         charCoverUrl: '/project-imgs-md/ByteBlogChar.webp'
@@ -517,6 +526,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'NASA Apod',
     cover: {
+      alt: `NASA Apod project images`,
       md: {
         coverUrl: '/project-imgs-md/NasaApod.webp',
         charCoverUrl: '/project-imgs-md/NasaApodChar.webp'
@@ -544,6 +554,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'DailyFuel',
     cover: {
+      alt: `DailyFuel project images`,
       md: {
         coverUrl: '/project-imgs-md/DailyFuel.webp',
         charCoverUrl: '/project-imgs-md/DailyFuelChar.webp'

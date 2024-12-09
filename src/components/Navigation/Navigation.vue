@@ -33,10 +33,6 @@ function handleSwitch() {
   burguerOpen.value = !burguerOpen.value
 }
 
-watchEffect(() => {
-  console.log(burguerOpen.value)
-})
-
 </script>
 
 <template>
@@ -50,7 +46,7 @@ watchEffect(() => {
     </nav>
     <div id="box_separator"></div>
   </div>
-  <BurgerMenu :links :burguer-open />
+  <BurgerMenu :links :burguer-open @close-menu="burguerOpen = false"/>
 </template>
 
 <style scoped>

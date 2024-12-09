@@ -5,12 +5,24 @@ import Tech from './Tech.vue';
 import Selected from './Selected.vue';
 import type { LineData } from '@/typedefs/stack';
 import Trail from './Trail.vue';
+import { useIntersectionObserver } from '@vueuse/core';
 
 const container = useTemplateRef<HTMLDivElement | null>('containerRef')
 const radius = ref<number | null>(null)
 const techs = ref(TECHS)
 const selected = ref<TechType | null>(null)
 const lines = ref<LineData[]>([]);
+
+const target = ref(null)
+const targetIsVisible = ref(false)
+
+const { stop } = useIntersectionObserver(
+  target,
+  ([entry]) => {
+    targetIsVisible.value = entry?.isIntersecting || false
+    if(targetIsVisible.value) stop()
+  },
+)
 
 function observeHeight(box: HTMLDivElement) {
   const resizeObserver = new ResizeObserver(() => {
@@ -53,8 +65,13 @@ watchEffect(() => {
 </script>
 
 <template>
-  <section id="stack">
-    <div id="stack_box" ref="containerRef" :style="{ borderColor: (selected?.color + '55') || colors.SEPARATOR }">
+  <section id="stack" ref="target">
+    <div 
+      id="stack_box" 
+      ref="containerRef" 
+      :style="{ borderColor: (selected?.color + '55') || colors.SEPARATOR }"
+      :class="{ visible: targetIsVisible }"
+    >
       <Tech 
         v-for="tech in techs"
         v-bind="{ ...tech, selected: tech.title === selected?.title }" 
@@ -92,7 +109,7 @@ watchEffect(() => {
 
   #stack_box {
     position: relative;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     height: 600px;
@@ -107,6 +124,10 @@ watchEffect(() => {
       height: 300px;
     }
   }
+}
+
+.visible {
+  display: flex !important;
 }
 
 @keyframes rotate {

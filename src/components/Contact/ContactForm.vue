@@ -6,14 +6,14 @@
       required: true,
       minLength: 5,
       maxLength: 100,
-      placeholder: 'I want to contact you'
+      placeholder: 'Inquiry about your web development projects'
     },
     body: {
       default: '',
       required: true,
       minLength: 20,
       maxLength: 500000,
-      placeholder: "I've contact you because..."
+      placeholder: "Write the details of your message here, such as your questions or proposals. I’d love to hear from you!"
     }
   }
 </script>
@@ -24,11 +24,20 @@ import { defineModel } from 'vue';
 const subject = defineModel('subject', { default: formData.subject.default })
 const body = defineModel('body', { default: formData.subject.default })
 
+const { targetIsVisible } = defineProps<{ targetIsVisible:boolean }>()
+
+const handleSubmit = () => {
+  const subjectURI = encodeURIComponent(subject.value);
+  const contentURI = encodeURIComponent(body.value);
+  const mailtoURL = `mailto:jorgeb.dev.acc@gmail.com?subject=${subjectURI}&body=${contentURI}`;
+  window.location.href = mailtoURL;
+}
+
 </script>
 
 
 <template>
-  <form id="form">
+  <form id="form" @submit.prevent="handleSubmit" :class="{ fadein_left: targetIsVisible }">
     <h1 id="form_title">Get in touch!</h1>
     <label class="form_label">
       Subject
@@ -39,6 +48,7 @@ const body = defineModel('body', { default: formData.subject.default })
         :maxlength="formData.subject.maxLength"
         :required="formData.subject.required"
         :placeholder="formData.subject.placeholder"
+        spellcheck="false"
       />
     </label>
     <label class="form_label">
@@ -51,6 +61,7 @@ const body = defineModel('body', { default: formData.subject.default })
         :maxlength="formData.body.maxLength"
         :required="formData.body.required"
         :placeholder="formData.body.placeholder"
+        spellcheck="false"
       />
     </label>
     <button id="form_submit" type="submit">SEND</button>
@@ -65,10 +76,10 @@ const body = defineModel('body', { default: formData.subject.default })
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid var(--separator);
+    border: 1px solid var(--text);
     border-radius: 6px;
-    background: rgb(58,99,81);
-    background: linear-gradient(45deg, rgba(58,99,81,1) 0%, rgba(26,26,26,1) 50%);
+    background: rgb(26,26,26);
+    background: radial-gradient(circle, rgba(26,26,26,1) 30%, rgba(58,99,81,1) 100%);
 
     #form_title {
       font-size: 25px;
@@ -94,11 +105,12 @@ const body = defineModel('body', { default: formData.subject.default })
         color: var(--text);
         margin-top: 5px;
         outline: 1px solid var(--separator);
-        font-size: 14px;
+        font-size: 13px;
 
         &:focus {
           background-color: #111;
           color: var(--text);
+          outline: 1px solid var(--text);
         }
       }
 
@@ -125,8 +137,12 @@ const body = defineModel('body', { default: formData.subject.default })
       &:hover {
         color: var(--text);
         background-color: var(--hover);
-        outline: 1px solid var(--text);
+        box-shadow: 0 0 5px var(--text);
       }
     }
+  }
+
+  .fadein_left {
+    animation: fadein_left 500ms ease-out forwards !important;
   }
 </style>

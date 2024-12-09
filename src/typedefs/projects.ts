@@ -17,6 +17,7 @@ export type Cover = {
 }
 
 export type ProjectCover = {
+  alt: string,
   md: Cover,
   sm: Cover
 }

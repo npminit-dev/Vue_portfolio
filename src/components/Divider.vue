@@ -66,7 +66,7 @@ const { stop } = useIntersectionObserver(
   }
 
   .line {
-    height: 2px;
+    height: 1px;
     width: 0;
     background-color: var(--separator);
     align-self: center;

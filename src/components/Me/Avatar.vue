@@ -4,7 +4,7 @@
 
 <template>
   <div id="me_left_imgbox">
-    <img id="me_left_imgbox_avatar" src="../../assets/avatar.webp" />
+    <img id="me_left_imgbox_avatar" src="../../assets/avatar.webp" alt="A character-like image of myself (avatar)" />
     <div id="me_left_imgbox_shine"></div>
     <div id="me_left_imgbox_ring"></div>
   </div>

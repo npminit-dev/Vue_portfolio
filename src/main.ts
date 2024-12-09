@@ -14,7 +14,7 @@ import { CoLinkedinIn, CoStackoverflow, CoGithub, CoJava,
   IoLogoNodejs, CoNextJs, CoExpo, CoTypescript, HiSolidDatabase, CoDocker, FaFigma, IoBulb,
   SiReactrouter, SiTailwindcss, BiBootstrapFill, SiAntdesign, CoMysql, SiSqlite, SiMicrosoftsqlserver,
   AiZotero, SiExpress, SiReactquery, GiJesterHat, SiCypress, CoRedux, SiSemanticuireact,
-  BiChevronCompactLeft, BiChevronCompactRight, CoMongodb
+  BiChevronCompactLeft, BiChevronCompactRight, CoMongodb, BiEyeFill
 } from "oh-vue-icons/icons";
 
 import { MotionPlugin } from '@vueuse/motion'
@@ -52,7 +52,8 @@ addIcons(
   SiSemanticuireact,
   BiChevronCompactLeft, 
   BiChevronCompactRight,
-  CoMongodb
+  CoMongodb,
+  BiEyeFill
 )
 
 const app = createApp(App)
